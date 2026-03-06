@@ -33,6 +33,7 @@ const campers = [
       "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=900&q=80",
     imageAlt: "2-berth compact campervan hire in New Zealand — parked on a scenic road",
     specs: ["Sleeps 2", "Automatic", "Self-contained", "Gas cooker", "Fridge", "Onboard toilet & shower"],
+    price: "From NZ$199/day",
   },
   {
     name: "4-Berth Family",
@@ -44,6 +45,7 @@ const campers = [
       "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80",
     imageAlt: "4-berth family motorhome campervan hire in New Zealand",
     specs: ["Sleeps 4", "Automatic", "Self-contained", "Full kitchen", "Large fridge", "Onboard toilet & shower"],
+    price: "From NZ$249/day",
   },
 ];
 
@@ -100,6 +102,10 @@ export default function CampersPage() {
                         {spec}
                       </span>
                     ))}
+                  </div>
+                  <div className="pb-6 mb-2 border-b border-border">
+                    <p className="font-display font-bold text-dark text-xl">{camper.price}</p>
+                    <p className="font-body text-xs text-muted/70 mt-0.5">Peak season rates may vary</p>
                   </div>
                   <span className="font-body font-medium text-nature text-sm flex items-center gap-1.5 group-hover:gap-3 transition-all duration-200">
                     View details & book

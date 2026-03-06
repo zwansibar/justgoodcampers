@@ -15,7 +15,11 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push("/book");
+    const params = new URLSearchParams();
+    if (camper) params.set("camper", camper);
+    if (pickup) params.set("pickup", pickup);
+    if (dropoff) params.set("dropoff", dropoff);
+    router.push(`/book${params.toString() ? `?${params.toString()}` : ""}`);
   };
 
   return (

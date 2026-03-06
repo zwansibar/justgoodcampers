@@ -20,13 +20,19 @@ export default function StickyMobileCTA() {
       aria-hidden={!visible}
     >
       <div className="bg-white border-t border-border px-4 py-3 shadow-lg">
-        <Link
-          href="/book"
-          tabIndex={visible ? 0 : -1}
-          className="flex items-center justify-center w-full bg-accent text-white px-6 py-3.5 rounded-xl font-display font-bold text-sm hover:bg-accent/90 transition-colors duration-200"
-        >
-          Check Availability
-        </Link>
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <p className="font-display font-bold text-dark text-sm">From NZ$199/day</p>
+            <p className="font-body text-xs text-muted">No deposit required</p>
+          </div>
+          <Link
+            href="/book"
+            tabIndex={visible ? 0 : -1}
+            className="flex-shrink-0 bg-accent text-white px-5 py-3 rounded-xl font-display font-bold text-sm hover:bg-accent/90 transition-colors duration-200"
+          >
+            Check Availability
+          </Link>
+        </div>
       </div>
     </div>
   );

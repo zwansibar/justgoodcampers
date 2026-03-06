@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -108,6 +109,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <WhatsAppButton />
         <Analytics />
         <SpeedInsights />
       </body>

@@ -69,6 +69,9 @@ export default function HeroSection() {
             style={{ transitionDelay: "900ms" }}
           >
             <BookingBar />
+            <p className="font-body text-white/40 text-xs mt-3">
+              No deposit required &middot; Free cancellation &middot; Response within hours
+            </p>
           </div>
         </div>
 

@@ -1,8 +1,8 @@
 const items = [
+  "Pickup from Auckland",
   "No hidden fees",
   "Everything included",
-  "Family owned",
-  "24/7 support",
+  "Family owned & operated",
 ];
 
 export default function TrustBar() {

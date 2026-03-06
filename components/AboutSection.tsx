@@ -61,7 +61,7 @@ export default function AboutSection() {
                 After exploring New Zealand by camper ourselves, we knew exactly what makes a great trip and what ruins one. Confusing pricing, unexpected fees at pickup, and impersonal service from big rental companies? We&apos;ve been there.
               </p>
               <p>
-                That&apos;s why we do things differently. Every camper is fully equipped and ready from the moment you pick it up. Bedding, cooking gear, chairs, airport transfer — it&apos;s all included. No packages to compare, no extras you didn&apos;t ask for.
+                That&apos;s why we do things differently. Every camper is fully equipped and ready from the moment you pick it up. Bedding, cooking gear, chairs, airport transfer — it&apos;s all included. No packages to compare, no extras you didn&apos;t ask for. Pick up your camper from our Auckland base, and you&apos;re ready to explore both islands at your own pace.
               </p>
               <p>
                 We&apos;re small on purpose. It means we can give you the kind of personal attention that bigger companies simply can&apos;t. Need route tips? Wondering where to freedom camp? Just send us a message — we love helping travellers get the most out of New Zealand.

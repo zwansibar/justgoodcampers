@@ -47,6 +47,9 @@ export default function CTASection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </Link>
+          <p className="font-body text-white/50 text-xs mt-4">
+            No deposit needed &middot; Cancel anytime &middot; We respond within hours
+          </p>
         </div>
       </div>
     </section>
