@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Wifi, Search, Star, Leaf, Tent, Bike, Droplets, ShowerHead } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "What's Included with Every Camper Rental in New Zealand | JustGoodCampers",
@@ -41,10 +42,14 @@ const included = [
 ];
 
 const optional = [
-  { label: "Extra driver", description: "Add an additional driver to the rental agreement." },
-  { label: "Portable BBQ", description: "A small gas barbecue for cooking outdoors." },
-  { label: "Bike rack", description: "Fits 2 bikes — great for exploring trails from camp." },
-  { label: "Child seat", description: "Properly fitted child seat for younger travellers." },
+  { Icon: Wifi,       label: "Starlink Wi-Fi",          description: "Stay connected anywhere in New Zealand with satellite internet." },
+  { Icon: Search,     label: "Binoculars",               description: "Spot dolphins, birds, and stars up close." },
+  { Icon: Star,       label: "Ultimate Campground Kit",  description: "Jeu de boules, frisbee, Jenga, and more for evenings at camp." },
+  { Icon: Leaf,       label: "Hammock",                  description: "String it up between two trees and do absolutely nothing." },
+  { Icon: Tent,       label: "Tent",                     description: "Extra sleeping space for friends or an adventure-loving kid." },
+  { Icon: Bike,       label: "Bike Rack",                description: "Mount your bikes and explore trails along the way." },
+  { Icon: Bike,       label: "Bikes",                    description: "Rent bikes and explore New Zealand's trails and scenic routes on two wheels." },
+  { Icon: Droplets,   label: "Outdoor Shower",           description: "Rinse off after a beach day or a muddy hike." },
 ];
 
 const breadcrumbJsonLd = {
@@ -90,22 +95,35 @@ export default function WhatsIncludedPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="font-display font-bold text-subheading text-dark mb-2">Optional upgrades</h2>
-          <p className="font-body text-muted mb-8">You won&apos;t need these to have a great trip — but they&apos;re available if you want them.</p>
-          <div className="divide-y divide-border border-t border-border">
-            {optional.map((item) => (
-              <div key={item.label} className="py-5 flex items-start gap-4">
-                <div className="w-2 h-2 rounded-full bg-nature mt-2 flex-shrink-0" />
-                <div>
-                  <h3 className="font-display font-bold text-base text-dark">{item.label}</h3>
-                  <p className="font-body text-sm text-muted mt-1">{item.description}</p>
+          <p className="font-body text-muted text-base mb-10 max-w-2xl">
+            Our campers come fully equipped, but if you want to take your trip to the next level, these optional add-ons are available.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {optional.map((item) => {
+              const { Icon } = item;
+              return (
+                <div key={item.label} className="bg-light border border-border rounded-2xl p-5">
+                  <div className="w-9 h-9 rounded-xl bg-nature/10 flex items-center justify-center mb-4">
+                    <Icon className="w-4 h-4 text-nature" strokeWidth={1.75} />
+                  </div>
+                  <h3 className="font-display font-bold text-sm text-dark mb-1">{item.label}</h3>
+                  <p className="font-body text-xs text-muted leading-relaxed">{item.description}</p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
-          <p className="font-body text-sm text-muted/60 italic mt-8">Get in touch to add any upgrades to your booking.</p>
+          <p className="font-body text-sm text-muted mt-10 mb-2">
+            Interested in any of these? Just add them during your booking.
+          </p>
+          <Link
+            href="/book"
+            className="font-body font-medium text-sm text-accent hover:underline underline-offset-2"
+          >
+            Book your camper &rarr;
+          </Link>
         </div>
       </section>
 

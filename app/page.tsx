@@ -6,6 +6,7 @@ import WhatsIncluded from "@/components/WhatsIncluded";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import CTASection from "@/components/CTASection";
+import SEOContentSection from "@/components/SEOContentSection";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 const homepageFaqJsonLd = {
@@ -59,6 +60,7 @@ export default function HomePage() {
       <HowItWorks />
       <Testimonials />
       <CTASection />
+      <SEOContentSection />
       <StickyMobileCTA />
     </main>
   );

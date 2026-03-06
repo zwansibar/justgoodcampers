@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf /Users/nikki/Documents/justgoodcampers/.next && npm run build 2>&1 | tail -35)",
+      "Bash(npm run build 2>&1 | tail -35)",
+      "Bash(npm run build 2>&1 | tail -30)",
+      "Bash(lsof -ti :3000,:3001 | xargs kill -9 2>/dev/null; rm -rf /Users/nikki/Documents/justgoodcampers/.next; npm run dev)",
+      "Bash(npm install lucide-react --cache /tmp/npm-cache-nikki 2>&1 | tail -5)",
+      "Bash(curl -s http://localhost:3003 2>&1 | head -30)",
+      "Bash(lsof -ti :3000,:3001,:3002 | xargs kill -9 2>/dev/null; echo \"Killed old processes\")",
+      "Bash(lsof -ti :3000 | xargs kill -9 2>/dev/null\nlsof -ti :3001 | xargs kill -9 2>/dev/null\nlsof -ti :3002 | xargs kill -9 2>/dev/null\nlsof -ti :3003 | xargs kill -9 2>/dev/null\necho \"Done\")",
+      "Bash(pkill -9 -f next)",
+      "Bash(lsof -nP -iTCP:3000 -sTCP:LISTEN)",
+      "Bash(xargs kill -9)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(git add app/ components/ hooks/ lib/ tailwind.config.ts next.config.mjs package.json package-lock.json)",
+      "Bash(git commit -m \"$\\(cat <<'EOF'\nHomepage redesign: green nature theme, SEO optimization, new sections, design fixes\n\n- New dark forest green color palette \\(dark #1A3C2E, accent terracotta #D4613C, nature #2D6A4F\\)\n- Rebuilt HeroSection with word-by-word animation, two-column desktop layout, BookingBar\n- Added TrustBar, CamperSection, WhatsIncluded, HowItWorks, Testimonials, FAQAccordion sections\n- Full site SEO: metadata, JSON-LD schemas \\(FAQPage, BreadcrumbList, Vehicle, Article\\), sitemap, robots\n- Navbar: transparent on homepage hero, solid white on subpages via usePathname\n- Inner pages: animate-fade-up, nature green accents, consistent icon/color system \\(lucide-react\\)\n- Fixed 4-berth broken images, BookingBar button visibility, hero content overlap with navbar\n- Added booking, contact, FAQ, blog, what's included, camper detail pages\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"Homepage redesign: green nature theme, SEO optimization, new sections, design fixes\n\n- New dark forest green color palette \\(dark #1A3C2E, accent terracotta, nature green tokens\\)\n- Rebuilt HeroSection with word-by-word animation and two-column desktop layout\n- Added TrustBar, CamperSection, WhatsIncluded, HowItWorks, Testimonials, FAQAccordion\n- Full site SEO: metadata, JSON-LD schemas, sitemap, robots.txt\n- Navbar: transparent on homepage, solid white on subpages via usePathname\n- Inner pages: animate-fade-up, nature green accents, lucide-react icons\n- Fixed broken 4-berth images, BookingBar button, hero navbar overlap\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\")",
+      "Bash(git push origin main)",
+      "Bash(npm install @vercel/analytics)",
+      "Bash(git add package.json package-lock.json app/layout.tsx && git commit -m \"Add Vercel Analytics\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\" && git push origin main)",
+      "Bash(git add -A && git commit -m \"SEO improvements: campers page, optional upgrades, Auckland-only pickup, analytics\n\n- Updated /campers page: new H1, SEO descriptions, SEO text section, internal links\n- Fixed 4-berth image on campers page and homepage\n- Replaced optional upgrades section with 8 add-ons grid \\(lucide icons\\)\n- Removed Christchurch pickup reference \\(Auckland only\\)\n- Fixed onClick server component error on campers page\n- Added HowItWorks connecting line removal\n- Added SEOContentSection to homepage\n- Added Vercel Analytics\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>\" && git push origin main)"
+    ]
+  }
+}

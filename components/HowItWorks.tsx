@@ -61,8 +61,6 @@ export default function HowItWorks() {
 
         {/* Steps */}
         <div className="grid md:grid-cols-3 gap-10 md:gap-0 relative">
-          {/* Connecting dashed line — desktop only */}
-          <div className="hidden md:block absolute top-[1.375rem] left-[calc(16.67%+1.375rem)] right-[calc(16.67%+1.375rem)] h-px border-t-2 border-dashed border-nature/20" />
 
           {steps.map((step, i) => {
             const { Icon } = step;
