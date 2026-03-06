@@ -9,7 +9,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact | JustGoodCampers NZ",
     description: "Small family team, quick replies. Get in touch about your New Zealand camper rental.",
-    url: "https://www.justgoodcampers.com/contact",
+    url: "https://justgoodcampers.com/contact",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | JustGoodCampers New Zealand",
+    description: "Small family team, quick replies. Get in touch about your New Zealand camper rental.",
+    images: ["/og-image.png"],
   },
 };
 

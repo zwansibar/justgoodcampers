@@ -3,14 +3,22 @@ import Link from "next/link";
 import { Wifi, Search, Star, Leaf, Tent, Bike, Droplets } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "What's Included with Every Camper Rental in New Zealand | JustGoodCampers",
+  title: "What's Included — Camper Rental NZ | JustGoodCampers",
   description:
     "Every JustGoodCampers rental includes cooking gear, bedding, linen, camp chairs, airport transfer, and luggage storage. Everything included — no hidden fees, no packages to compare.",
   alternates: { canonical: "/whats-included" },
   openGraph: {
-    title: "What's Included with Every Camper Rental | JustGoodCampers NZ",
+    title: "What's Included — Camper Rental NZ | JustGoodCampers",
     description: "Everything included from day one — cooking gear, bedding, airport transfer, luggage storage. No packages, no hidden fees.",
-    url: "https://www.justgoodcampers.com/whats-included",
+    url: "https://justgoodcampers.com/whats-included",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What's Included — Camper Rental NZ | JustGoodCampers",
+    description: "Everything included from day one — cooking gear, bedding, airport transfer, luggage storage.",
+    images: ["/og-image.png"],
   },
 };
 

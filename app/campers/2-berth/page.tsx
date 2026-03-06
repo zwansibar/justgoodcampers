@@ -10,7 +10,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "2-Berth Compact Camper | JustGoodCampers NZ",
     description: "Fully equipped compact campervan for couples exploring New Zealand. Self-contained, automatic, everything included.",
-    url: "https://www.justgoodcampers.com/campers/2-berth",
+    url: "https://justgoodcampers.com/campers/2-berth",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "2-Berth Compact Camper Rental | JustGoodCampers NZ",
+    description: "Fully equipped compact campervan for couples exploring New Zealand.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -55,15 +63,15 @@ const jsonLd = {
         priceCurrency: "NZD",
         price: "150",
         availability: "https://schema.org/InStock",
-        url: "https://www.justgoodcampers.com/campers/2-berth",
+        url: "https://justgoodcampers.com/campers/2-berth",
       },
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.justgoodcampers.com" },
-        { "@type": "ListItem", position: 2, name: "Campers", item: "https://www.justgoodcampers.com/campers" },
-        { "@type": "ListItem", position: 3, name: "2-Berth Compact", item: "https://www.justgoodcampers.com/campers/2-berth" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://justgoodcampers.com" },
+        { "@type": "ListItem", position: 2, name: "Campers", item: "https://justgoodcampers.com/campers" },
+        { "@type": "ListItem", position: 3, name: "2-Berth Compact", item: "https://justgoodcampers.com/campers/2-berth" },
       ],
     },
   ],

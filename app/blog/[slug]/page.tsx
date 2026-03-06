@@ -20,9 +20,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://www.justgoodcampers.com/blog/${post.slug}`,
+      url: `https://justgoodcampers.com/blog/${post.slug}`,
       images: [{ url: post.image, alt: post.imageAlt }],
       type: "article",
+      siteName: "JustGoodCampers",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
     },
   };
 }
@@ -45,7 +52,7 @@ export default function BlogPostPage({ params }: Props) {
         author: {
           "@type": "Organization",
           name: "JustGoodCampers",
-          url: "https://www.justgoodcampers.com",
+          url: "https://justgoodcampers.com",
         },
         publisher: {
           "@type": "Organization",
@@ -55,9 +62,9 @@ export default function BlogPostPage({ params }: Props) {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.justgoodcampers.com" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.justgoodcampers.com/blog" },
-          { "@type": "ListItem", position: 3, name: post.title, item: `https://www.justgoodcampers.com/blog/${post.slug}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://justgoodcampers.com" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://justgoodcampers.com/blog" },
+          { "@type": "ListItem", position: 3, name: post.title, item: `https://justgoodcampers.com/blog/${post.slug}` },
         ],
       },
     ],

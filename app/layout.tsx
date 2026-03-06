@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const siteUrl = "https://www.justgoodcampers.com";
+const siteUrl = "https://justgoodcampers.com";
 
 export const metadata: Metadata = {
   title: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       "Family-owned camper rental in New Zealand. Fully equipped campers, no hidden fees, personal service.",
     url: siteUrl,
     siteName: "JustGoodCampers",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "JustGoodCampers New Zealand" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "JustGoodCampers New Zealand" }],
     locale: "en_NZ",
     type: "website",
   },
@@ -44,9 +44,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Camper Rental New Zealand | JustGoodCampers",
     description: "Family-owned camper rental in New Zealand. No hidden fees, everything included.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
+  other: {
+    "theme-color": "#1A3C2E",
+  },
 };
 
 const jsonLd = {
@@ -92,8 +95,17 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${dmSans.variable} font-body antialiased bg-light`}
       >
+        {/* Skip to main content — accessibility */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-dark focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-body focus:text-sm focus:font-medium"
+        >
+          Skip to main content
+        </a>
         <Navbar />
-        {children}
+        <div id="main-content">
+          {children}
+        </div>
         <Footer />
         <Analytics />
       </body>

@@ -4,14 +4,22 @@ import Link from "next/link";
 import { blogPosts } from "@/lib/blog-posts";
 
 export const metadata: Metadata = {
-  title: "New Zealand Campervan Travel Blog | Road Trip Tips & Guides | JustGoodCampers",
+  title: "NZ Campervan Travel Blog | Road Trip Tips | JustGoodCampers",
   description:
     "Road trip guides, freedom camping tips, and practical travel advice for exploring New Zealand by camper — from the JustGoodCampers team.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "New Zealand Campervan Travel Blog | JustGoodCampers",
+    title: "NZ Campervan Travel Blog | JustGoodCampers",
     description: "Road trip guides and freedom camping tips for exploring New Zealand by camper.",
-    url: "https://www.justgoodcampers.com/blog",
+    url: "https://justgoodcampers.com/blog",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NZ Campervan Travel Blog | JustGoodCampers",
+    description: "Road trip guides and freedom camping tips for exploring New Zealand by camper.",
+    images: ["/og-image.png"],
   },
 };
 

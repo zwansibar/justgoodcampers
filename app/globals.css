@@ -6,6 +6,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Global focus-visible styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid #2D6A4F;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2D6A4F;
+  outline-offset: 2px;
+}
+
 body {
   color: #2D2D2D;
   background: #F7F4EE;

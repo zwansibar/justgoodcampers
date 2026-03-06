@@ -3,14 +3,22 @@ import Link from "next/link";
 import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "Camper Rental FAQ New Zealand — Licences, Freedom Camping & More | JustGoodCampers",
+  title: "Campervan Rental FAQ New Zealand | JustGoodCampers",
   description:
     "Common questions about renting a camper in New Zealand — driver's licences, freedom camping rules, self-containment, insurance, airport pick-up, cancellations, and more.",
   alternates: { canonical: "/faq" },
   openGraph: {
-    title: "Camper Rental FAQ New Zealand | JustGoodCampers",
+    title: "Campervan Rental FAQ New Zealand | JustGoodCampers",
     description: "Everything you need to know before booking a camper rental in New Zealand.",
-    url: "https://www.justgoodcampers.com/faq",
+    url: "https://justgoodcampers.com/faq",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Campervan Rental FAQ New Zealand | JustGoodCampers",
+    description: "Everything you need to know before booking a camper rental in New Zealand.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -94,8 +102,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.justgoodcampers.com" },
-    { "@type": "ListItem", position: 2, name: "FAQ", item: "https://www.justgoodcampers.com/faq" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://justgoodcampers.com" },
+    { "@type": "ListItem", position: 2, name: "FAQ", item: "https://justgoodcampers.com/faq" },
   ],
 };
 

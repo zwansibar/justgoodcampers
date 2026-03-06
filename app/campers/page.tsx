@@ -3,14 +3,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Camper Hire New Zealand | 2-Berth & 4-Berth Campervans | JustGoodCampers",
+  title: "Camper Hire New Zealand | 2 & 4 Berth | JustGoodCampers",
   description:
     "Browse our 2-berth compact and 4-berth family campervans for hire in New Zealand. Both self-contained, automatic, and fully equipped — no hidden fees, no packages.",
   alternates: { canonical: "/campers" },
   openGraph: {
     title: "Camper Hire New Zealand | JustGoodCampers",
     description: "2-berth and 4-berth campervans for hire in New Zealand. Self-contained, fully equipped, no hidden fees.",
-    url: "https://www.justgoodcampers.com/campers",
+    url: "https://justgoodcampers.com/campers",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Camper Hire New Zealand | JustGoodCampers",
+    description: "2-berth and 4-berth campervans for hire in New Zealand. Self-contained, fully equipped, no hidden fees.",
+    images: ["/og-image.png"],
   },
 };
 

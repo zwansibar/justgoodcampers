@@ -9,19 +9,26 @@ export interface FAQItem {
 
 function AccordionItem({
   faq,
+  index,
   isOpen,
   onToggle,
 }: {
   faq: FAQItem;
+  index: number;
   isOpen: boolean;
   onToggle: () => void;
 }) {
+  const panelId = `faq-panel-${index}`;
+  const buttonId = `faq-btn-${index}`;
+
   return (
     <div className="border-b border-border">
       <button
+        id={buttonId}
         className="w-full text-left py-5 flex items-start justify-between gap-4 group"
         onClick={onToggle}
         aria-expanded={isOpen}
+        aria-controls={panelId}
       >
         <span className="font-display font-bold text-base md:text-lg text-dark group-hover:text-nature transition-colors duration-200">
           {faq.question}
@@ -40,6 +47,9 @@ function AccordionItem({
         </svg>
       </button>
       <div
+        id={panelId}
+        role="region"
+        aria-labelledby={buttonId}
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? "max-h-96 pb-5" : "max-h-0"
         }`}
@@ -61,6 +71,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQItem[] }) {
         <AccordionItem
           key={i}
           faq={faq}
+          index={i}
           isOpen={openIndex === i}
           onToggle={() => setOpenIndex(openIndex === i ? null : i)}
         />

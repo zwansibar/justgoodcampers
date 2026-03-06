@@ -10,7 +10,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "4-Berth Family Camper | JustGoodCampers NZ",
     description: "Spacious family motorhome for New Zealand road trips. Sleeps 4, fully equipped, self-contained.",
-    url: "https://www.justgoodcampers.com/campers/4-berth",
+    url: "https://justgoodcampers.com/campers/4-berth",
+    siteName: "JustGoodCampers",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "4-Berth Family Camper Rental | JustGoodCampers NZ",
+    description: "Spacious family motorhome for New Zealand road trips. Sleeps 4, fully equipped, self-contained.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -55,15 +63,15 @@ const jsonLd = {
         priceCurrency: "NZD",
         price: "190",
         availability: "https://schema.org/InStock",
-        url: "https://www.justgoodcampers.com/campers/4-berth",
+        url: "https://justgoodcampers.com/campers/4-berth",
       },
     },
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.justgoodcampers.com" },
-        { "@type": "ListItem", position: 2, name: "Campers", item: "https://www.justgoodcampers.com/campers" },
-        { "@type": "ListItem", position: 3, name: "4-Berth Family", item: "https://www.justgoodcampers.com/campers/4-berth" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://justgoodcampers.com" },
+        { "@type": "ListItem", position: 2, name: "Campers", item: "https://justgoodcampers.com/campers" },
+        { "@type": "ListItem", position: 3, name: "4-Berth Family", item: "https://justgoodcampers.com/campers/4-berth" },
       ],
     },
   ],

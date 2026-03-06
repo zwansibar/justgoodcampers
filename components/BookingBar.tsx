@@ -26,12 +26,12 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
     >
       {/* Desktop: single row */}
       <div className="hidden md:flex items-stretch divide-x divide-border">
-        {/* Camper select */}
         <div className="flex-1 flex flex-col justify-center px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="d-camper" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Camper
           </label>
           <select
+            id="d-camper"
             value={camper}
             onChange={(e) => setCamper(e.target.value)}
             className="w-full font-body text-ink text-sm bg-transparent border-none outline-none cursor-pointer appearance-none"
@@ -42,12 +42,12 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
           </select>
         </div>
 
-        {/* Pick-up date */}
         <div className="flex-1 flex flex-col justify-center px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="d-pickup" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Pick-up
           </label>
           <input
+            id="d-pickup"
             type="date"
             value={pickup}
             onChange={(e) => setPickup(e.target.value)}
@@ -55,12 +55,12 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
           />
         </div>
 
-        {/* Drop-off date */}
         <div className="flex-1 flex flex-col justify-center px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="d-dropoff" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Drop-off
           </label>
           <input
+            id="d-dropoff"
             type="date"
             value={dropoff}
             onChange={(e) => setDropoff(e.target.value)}
@@ -68,7 +68,6 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
           />
         </div>
 
-        {/* Submit */}
         <div className="flex items-center px-4 py-3">
           <button
             type="submit"
@@ -82,10 +81,11 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
       {/* Mobile: stacked */}
       <div className="flex flex-col divide-y divide-border md:hidden">
         <div className="px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="m-camper" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Camper
           </label>
           <select
+            id="m-camper"
             value={camper}
             onChange={(e) => setCamper(e.target.value)}
             className="w-full font-body text-ink text-base bg-transparent border-none outline-none cursor-pointer appearance-none"
@@ -97,10 +97,11 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
         </div>
 
         <div className="px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="m-pickup" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Pick-up date
           </label>
           <input
+            id="m-pickup"
             type="date"
             value={pickup}
             onChange={(e) => setPickup(e.target.value)}
@@ -109,10 +110,11 @@ export default function BookingBar({ className = "" }: BookingBarProps) {
         </div>
 
         <div className="px-5 py-4">
-          <label className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
+          <label htmlFor="m-dropoff" className="block font-body text-xs font-medium text-muted uppercase tracking-wider mb-1.5">
             Drop-off date
           </label>
           <input
+            id="m-dropoff"
             type="date"
             value={dropoff}
             onChange={(e) => setDropoff(e.target.value)}
