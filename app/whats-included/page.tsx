@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Wifi, Search, Star, Leaf, Tent, Bike, Droplets, ShowerHead } from "lucide-react";
+import { Wifi, Search, Star, Leaf, Tent, Bike, Droplets } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "What's Included with Every Camper Rental in New Zealand | JustGoodCampers",
