@@ -64,8 +64,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.justgoodcampers.com" },
-    { "@type": "ListItem", position: 2, name: "What's Included", item: "https://www.justgoodcampers.com/whats-included" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://justgoodcampers.com" },
+    { "@type": "ListItem", position: 2, name: "What's Included", item: "https://justgoodcampers.com/whats-included" },
   ],
 };
 
@@ -79,8 +79,8 @@ export default function WhatsIncludedPage() {
           <h1 className="font-display font-bold text-heading text-white max-w-2xl animate-fade-up" style={{ animationDelay: "100ms" }}>
             Everything included from day one
           </h1>
-          <p className="font-body text-white/50 text-lg mt-4 max-w-xl animate-fade-up" style={{ animationDelay: "250ms" }}>
-            You book a camper. It&apos;s packed and ready. You drive. That&apos;s the whole deal.
+          <p className="font-body text-white/70 text-lg mt-4 max-w-2xl animate-fade-up" style={{ animationDelay: "250ms" }}>
+            Every JustGoodCampers rental includes cooking gear and utensils, bedding and linen for all berths, camp chairs and table, a cleaning kit, airport pickup from Auckland, and luggage storage during your trip — all at no extra cost. No packages to compare. No surprises at pickup.
           </p>
         </div>
       </section>

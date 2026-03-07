@@ -30,8 +30,8 @@ export default function ContactPage() {
           <h1 className="font-display font-bold text-heading text-white max-w-2xl animate-fade-up" style={{ animationDelay: "100ms" }}>
             We&apos;d love to hear from you
           </h1>
-          <p className="font-body text-white/50 text-lg mt-4 max-w-xl animate-fade-up" style={{ animationDelay: "250ms" }}>
-            We&apos;re a small family team and we love hearing from future travellers. We typically respond within a few hours.
+          <p className="font-body text-white/70 text-lg mt-4 max-w-2xl animate-fade-up" style={{ animationDelay: "250ms" }}>
+            JustGoodCampers is a family-owned campervan hire company based in Auckland, New Zealand. To make an enquiry or ask a question about your rental, email us at hello@justgoodcampers.com or send a message on WhatsApp. We typically reply within a few hours.
           </p>
         </div>
       </section>

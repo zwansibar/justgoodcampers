@@ -4,6 +4,7 @@ export interface BlogPost {
   date: string;
   dateISO: string;
   excerpt: string;
+  tldr: string;
   content: string[];
   image: string;
   imageAlt: string;
@@ -19,6 +20,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min read",
     excerpt:
       "New Zealand offers hundreds of stunning freedom camping spots for self-contained vehicles. Here are our favourites — from glacier lakes to dramatic coastlines.",
+    tldr: "New Zealand's best freedom camping spots include Lake Pukaki (glacial blue water near Aoraki/Mount Cook), Lake Tekapo (dark-sky stargazing), Cape Palliser (remote coastal wilderness), the Catlins (native bush and sea lions), and Raglan (surf and laid-back beach culture). All require a NZ-certified self-contained vehicle. JustGoodCampers' campervans are certified and ready to go.",
     image:
       "https://images.unsplash.com/photo-1469521669194-babb45599def?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Dramatic New Zealand fjord landscape with mountains and still water",
@@ -36,6 +38,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     excerpt:
       "Most visitors don't have time to explore both islands fully. Knowing which one suits you best makes the difference between a good trip and a great one.",
+    tldr: "Choose the North Island for geothermal landscapes (Rotorua), Māori culture, coastal scenery (Bay of Islands), and the Tongariro Alpine Crossing. Choose the South Island for dramatic mountain scenery — Queenstown, Milford Sound, Fiordland, the West Coast, and the Mackenzie Basin. Both islands are accessible by campervan via the Interislander or Bluebridge ferry from Picton.",
     image:
       "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "New Zealand mountain landscape at golden hour with lake reflection",
@@ -53,6 +56,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min read",
     excerpt:
       "Renting a camper for the first time sounds complicated. It isn't. Here's everything you actually need to know before you pick up the keys.",
+    tldr: "No experience needed to rent a campervan in New Zealand. Your camper will be fully equipped on pickup. Use the free Campermate app to find campsites and freedom camping spots. Book holiday parks in advance in summer (NZ$40–60/night). Build in flexibility — NZ roads are beautiful but winding, and 100km often takes two hours.",
     image:
       "https://images.unsplash.com/photo-1499678329028-101435549a4e?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Campervan parked on a scenic New Zealand road with mountains in background",
@@ -70,6 +74,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     excerpt:
       "Every season in New Zealand has something to offer. Here's an honest guide to when to go — and when to avoid the crowds.",
+    tldr: "The best time to campervan in New Zealand is the shoulder season: October–November (spring) and March–April (autumn). These months offer settled weather, fewer crowds, and lower costs. Peak summer (December–February) is warmest but busiest — book your camper 3–6 months ahead. Winter (June–August) is quieter and dramatic, with snow-capped mountains and empty camping spots.",
     image:
       "https://images.unsplash.com/photo-1526917573-86c35c5a8dc3?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "New Zealand snow-capped mountains with lush green valleys below",

@@ -56,12 +56,15 @@ const jsonLd = {
     {
       "@type": "Vehicle",
       name: "2-Berth Compact Camper",
-      description: "Self-contained compact campervan for couples or solo travellers exploring New Zealand.",
+      description: "Self-contained compact campervan for couples and solo travellers exploring New Zealand. Sleeps 2 adults, automatic transmission, onboard toilet and shower, solar panel, heater, gas cooker. NZ certified for freedom camping. Includes bedding, cooking gear, camp chairs, and Auckland airport transfer.",
       brand: { "@type": "Brand", name: "JustGoodCampers" },
+      vehicleTransmission: "AutomaticTransmission",
+      numberOfForwardGears: 0,
       offers: {
         "@type": "Offer",
         priceCurrency: "NZD",
-        price: "150",
+        price: "199",
+        priceSpecification: { "@type": "UnitPriceSpecification", priceCurrency: "NZD", price: "199", unitText: "DAY" },
         availability: "https://schema.org/InStock",
         url: "https://justgoodcampers.com/campers/2-berth",
       },
@@ -101,9 +104,12 @@ export default function TwoBerthPage() {
             <p className="font-body text-nature text-sm font-medium tracking-[0.2em] uppercase mb-3">
               Compact &middot; For couples & solo travellers
             </p>
-            <h1 className="font-display font-bold text-heading text-dark mb-6 animate-fade-up" style={{ animationDelay: "80ms" }}>
+            <h1 className="font-display font-bold text-heading text-dark mb-4 animate-fade-up" style={{ animationDelay: "80ms" }}>
               2-Berth Compact
             </h1>
+            <p className="font-body text-ink text-base leading-relaxed mb-5 bg-nature/[0.06] border border-nature/15 rounded-xl px-4 py-3">
+              The 2-berth compact camper is a fully equipped, self-contained campervan for couples and solo travellers exploring New Zealand. It sleeps 2, drives automatically, includes an onboard toilet and shower, and is certified for freedom camping. Rental from NZ$199/day, with bedding, cooking gear, and Auckland airport transfer all included.
+            </p>
             <p className="font-body text-muted text-lg leading-relaxed mb-4">
               Our compact camper gives you everything you actually need for a New Zealand road trip — and nothing that just takes up space. It&apos;s self-contained, well-equipped, and easy to drive. Most importantly, it&apos;s ready to go from the moment we hand you the keys.
             </p>
@@ -138,7 +144,7 @@ export default function TwoBerthPage() {
             <div className="bg-card border border-border rounded-2xl p-6">
               <p className="font-body text-muted text-sm mb-1">From</p>
               <p className="font-display font-bold text-3xl text-dark mb-1">
-                NZ$150<span className="text-base font-body font-normal text-muted">/day</span>
+                NZ$199<span className="text-base font-body font-normal text-muted">/day</span>
               </p>
               <p className="font-body text-xs text-muted/70 mb-6">Seasonal pricing applies. Get in touch for a quote.</p>
               <Link

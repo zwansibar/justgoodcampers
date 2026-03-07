@@ -37,7 +37,7 @@ const specs = [
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1478827387620-527f14a3f4f9?auto=format&fit=crop&w=900&q=80",
+    src: "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=900&q=80",
     alt: "Spacious 4-berth family motorhome exterior on a New Zealand road",
   },
   {
@@ -56,12 +56,14 @@ const jsonLd = {
     {
       "@type": "Vehicle",
       name: "4-Berth Family Camper",
-      description: "Spacious self-contained family motorhome for families and groups exploring New Zealand.",
+      description: "Spacious self-contained family motorhome for families and groups exploring New Zealand. Sleeps up to 4 (2 adults + 2 children or 4 adults), automatic transmission, full kitchen with gas cooker and large compressor fridge, onboard toilet and shower, solar panel, heater, 100L fresh water tank. NZ certified for freedom camping. Includes bedding and linen for all berths, cooking gear, camp chairs, and Auckland airport transfer.",
       brand: { "@type": "Brand", name: "JustGoodCampers" },
+      vehicleTransmission: "AutomaticTransmission",
       offers: {
         "@type": "Offer",
         priceCurrency: "NZD",
-        price: "190",
+        price: "249",
+        priceSpecification: { "@type": "UnitPriceSpecification", priceCurrency: "NZD", price: "249", unitText: "DAY" },
         availability: "https://schema.org/InStock",
         url: "https://justgoodcampers.com/campers/4-berth",
       },
@@ -99,9 +101,12 @@ export default function FourBerthPage() {
             <p className="font-body text-nature text-sm font-medium tracking-[0.2em] uppercase mb-3">
               Family &middot; For families & small groups
             </p>
-            <h1 className="font-display font-bold text-heading text-dark mb-6 animate-fade-up" style={{ animationDelay: "80ms" }}>
+            <h1 className="font-display font-bold text-heading text-dark mb-4 animate-fade-up" style={{ animationDelay: "80ms" }}>
               4-Berth Family
             </h1>
+            <p className="font-body text-ink text-base leading-relaxed mb-5 bg-nature/[0.06] border border-nature/15 rounded-xl px-4 py-3">
+              The 4-berth family camper is a spacious, self-contained motorhome for families and small groups travelling New Zealand. It sleeps up to 4, has a full kitchen, large compressor fridge, onboard toilet and shower, and is certified for freedom camping. Rental from NZ$249/day, with bedding, cooking gear, and Auckland airport transfer all included.
+            </p>
             <p className="font-body text-muted text-lg leading-relaxed mb-4">
               The 4-berth is built for people who want space to breathe. A full-size kitchen, a proper dining area, sleeping for four, and all the storage you need for a family trip or a group of friends doing it properly.
             </p>
@@ -132,7 +137,7 @@ export default function FourBerthPage() {
             <div className="bg-card border border-border rounded-2xl p-6">
               <p className="font-body text-muted text-sm mb-1">From</p>
               <p className="font-display font-bold text-3xl text-dark mb-1">
-                NZ$190<span className="text-base font-body font-normal text-muted">/day</span>
+                NZ$249<span className="text-base font-body font-normal text-muted">/day</span>
               </p>
               <p className="font-body text-xs text-muted/70 mb-6">Seasonal pricing applies. Get in touch for a quote.</p>
               <Link

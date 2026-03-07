@@ -42,7 +42,7 @@ const campers = [
     description:
       "Our spacious 4-berth family campervan gives you room to spread out and enjoy the journey together. With a full kitchen, comfortable sleeping for four, and all the essentials included, it is the perfect choice for families and small groups looking for a hassle-free New Zealand road trip.",
     image:
-      "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=80",
     imageAlt: "4-berth family motorhome campervan hire in New Zealand",
     specs: ["Sleeps 4", "Automatic", "Self-contained", "Full kitchen", "Large fridge", "Onboard toilet & shower"],
     price: "From NZ$249/day",
@@ -55,9 +55,42 @@ const seoLinks = [
   { label: "Get in touch", href: "/contact" },
 ];
 
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Campervans for Hire in New Zealand — JustGoodCampers",
+  description: "Two self-contained campervans available for hire in New Zealand, with pickup from Auckland.",
+  numberOfItems: 2,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      item: {
+        "@type": "Vehicle",
+        name: "2-Berth Compact Campervan",
+        description: "Self-contained compact campervan for couples and solo travellers in New Zealand. Sleeps 2, automatic transmission, onboard toilet and shower, from NZ$199/day.",
+        url: "https://justgoodcampers.com/campers/2-berth",
+        offers: { "@type": "Offer", priceCurrency: "NZD", price: "199", availability: "https://schema.org/InStock" },
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      item: {
+        "@type": "Vehicle",
+        name: "4-Berth Family Campervan",
+        description: "Spacious self-contained family motorhome for families and groups in New Zealand. Sleeps 4, full kitchen, large fridge, from NZ$249/day.",
+        url: "https://justgoodcampers.com/campers/4-berth",
+        offers: { "@type": "Offer", priceCurrency: "NZD", price: "249", availability: "https://schema.org/InStock" },
+      },
+    },
+  ],
+};
+
 export default function CampersPage() {
   return (
     <main className="pt-20">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }} />
       {/* Hero */}
       <section className="bg-dark py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
@@ -65,8 +98,8 @@ export default function CampersPage() {
           <h1 className="font-display font-bold text-heading text-white max-w-3xl animate-fade-up" style={{ animationDelay: "100ms" }}>
             Campervan rental New Zealand: choose your camper
           </h1>
-          <p className="font-body text-white/50 text-lg mt-4 max-w-xl animate-fade-up" style={{ animationDelay: "250ms" }}>
-            Two fully equipped, self-contained campervans for your New Zealand road trip. Pick the size that suits your journey.
+          <p className="font-body text-white/70 text-lg mt-4 max-w-2xl animate-fade-up" style={{ animationDelay: "250ms" }}>
+            JustGoodCampers offers two fully equipped campervans for hire in New Zealand: a compact 2-berth campervan ideal for couples, and a spacious 4-berth family campervan. Both are self-contained for freedom camping, include bedding, cooking gear, and airport transfer from Auckland, with no hidden fees.
           </p>
         </div>
       </section>

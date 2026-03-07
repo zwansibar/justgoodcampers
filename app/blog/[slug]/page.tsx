@@ -101,6 +101,11 @@ export default function BlogPostPage({ params }: Props) {
       {/* Article body */}
       <article className="py-16 md:py-20 bg-light">
         <div className="max-w-3xl mx-auto px-6">
+          {/* TL;DR answer capsule */}
+          <div className="bg-nature/[0.06] border border-nature/15 rounded-xl px-5 py-4 mb-10">
+            <p className="font-display font-bold text-sm text-dark mb-1">TL;DR</p>
+            <p className="font-body text-sm text-ink leading-relaxed">{post.tldr}</p>
+          </div>
           <div className="space-y-6 mb-16">
             {post.content.map((paragraph, i) => (
               <p key={i} className="font-body text-ink text-lg leading-relaxed">
