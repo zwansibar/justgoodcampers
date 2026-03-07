@@ -6,7 +6,7 @@ import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import { ADDONS, CAMPER_RATES, calculatePrice, formatNZD } from "@/lib/pricing";
 import type { DateRange } from "@/lib/availability";
-import { rangesOverlap, isDateInRanges } from "@/lib/availability";
+import { rangesOverlap, isDateInRanges } from "@/lib/date-utils";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

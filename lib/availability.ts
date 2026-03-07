@@ -1,4 +1,5 @@
 import { supabase } from "./supabase";
+import { rangesOverlap } from "./date-utils";
 
 export interface DateRange {
   start: string; // ISO date "YYYY-MM-DD"
@@ -44,21 +45,6 @@ export async function getUnavailableDates(camperSlug: string): Promise<DateRange
   }
 
   return ranges;
-}
-
-export function isDateInRanges(date: Date, ranges: DateRange[]): boolean {
-  const d = date.toISOString().split("T")[0];
-  return ranges.some((r) => d >= r.start && d < r.end);
-}
-
-export function rangesOverlap(
-  pickupDate: Date,
-  dropoffDate: Date,
-  ranges: DateRange[]
-): boolean {
-  const pickup = pickupDate.toISOString().split("T")[0];
-  const dropoff = dropoffDate.toISOString().split("T")[0];
-  return ranges.some((r) => pickup < r.end && dropoff > r.start);
 }
 
 export async function isAvailable(
