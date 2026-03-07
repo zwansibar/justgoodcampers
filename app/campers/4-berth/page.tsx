@@ -136,15 +136,19 @@ export default function FourBerthPage() {
           <aside className="space-y-6">
             <div className="bg-card border border-border rounded-2xl p-6">
               <p className="font-body text-muted text-sm mb-1">From</p>
-              <p className="font-display font-bold text-3xl text-dark mb-1">
-                NZ$249<span className="text-base font-body font-normal text-muted">/day</span>
-              </p>
-              <p className="font-body text-xs text-muted/70 mb-6">Seasonal pricing applies. Get in touch for a quote.</p>
+              <div className="mb-4">
+                <div className="space-y-1.5 text-sm font-body mb-1">
+                  <div className="flex justify-between items-baseline"><span className="text-muted">Low season <span className="text-xs">(May–Sep)</span></span><span className="font-bold text-dark">NZ$229/day</span></div>
+                  <div className="flex justify-between items-baseline"><span className="text-muted">Shoulder <span className="text-xs">(Oct–Nov, Mar–Apr)</span></span><span className="font-bold text-dark">NZ$269/day</span></div>
+                  <div className="flex justify-between items-baseline"><span className="text-muted">High season <span className="text-xs">(Dec–Feb)</span></span><span className="font-bold text-dark">NZ$319/day</span></div>
+                </div>
+                <p className="font-body text-xs text-muted/70">Minimum 5 days rental</p>
+              </div>
               <Link
-                href="/book"
+                href="/book?camper=4-berth"
                 className="flex items-center justify-center w-full bg-accent text-white py-4 rounded-xl font-display font-bold text-sm hover:bg-accent/90 transition-colors duration-200"
               >
-                Check Availability
+                Book this camper
               </Link>
               <Link
                 href="/contact"
