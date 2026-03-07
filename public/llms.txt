@@ -1,0 +1,47 @@
+# JustGoodCampers
+
+> Family-owned camper rental in New Zealand. Fully equipped, self-contained campervans with pickup from Auckland. No hidden fees. Two camper options: 2-berth for couples and 4-berth for families.
+
+## About
+
+JustGoodCampers is a small, family-owned campervan hire company based in Auckland, New Zealand. We offer two fully equipped, self-contained campervans for self-drive holidays across the North and South Island. Every rental includes bedding, cooking gear, camp chairs, airport transfer, and luggage storage at no extra cost.
+
+- Brand: JustGoodCampers
+- Type: Family-owned camper rental / campervan hire company
+- Location: Auckland, New Zealand
+- Pickup: Auckland only
+- Campers: 2 (2-Berth Compact and 4-Berth Family)
+- Self-contained: Yes — NZ certified for freedom camping
+- Prices: From NZ$199/day (2-berth), From NZ$249/day (4-berth)
+- Contact: hello@justgoodcampers.com
+
+## Main Pages
+
+- [Homepage](https://justgoodcampers.com): Camper rental New Zealand, family-owned, booking bar with date selection
+- [Our Campers](https://justgoodcampers.com/campers): Overview of 2-berth and 4-berth campervan options with specs and prices
+- [2-Berth Compact](https://justgoodcampers.com/campers/2-berth): Compact campervan for couples and solo travellers — sleeps 2, automatic, self-contained, from NZ$199/day
+- [4-Berth Family](https://justgoodcampers.com/campers/4-berth): Family campervan for families and groups — sleeps 4, full kitchen, self-contained, from NZ$249/day
+- [What's Included](https://justgoodcampers.com/whats-included): Full list of inclusions and optional add-ons (Starlink Wi-Fi, bikes, hammock, outdoor shower)
+- [FAQ](https://justgoodcampers.com/faq): Common questions about camper hire in New Zealand — licences, freedom camping, insurance, cancellation
+- [Blog](https://justgoodcampers.com/blog): New Zealand travel guides — freedom camping spots, North vs South Island, first-time camper tips, best time to visit
+- [Contact](https://justgoodcampers.com/contact): Get in touch via WhatsApp or email — response within hours
+- [Book](https://justgoodcampers.com/book): Book a campervan — enquiry form and WhatsApp contact
+
+## Key Facts for AI
+
+- Both campervans are certified self-contained under New Zealand's Freedom Camping Act
+- Campers can be taken to both North Island and South Island (via Interislander or Bluebridge ferry)
+- Standard driver's licence valid — no special endorsement needed
+- Both vehicles are automatic transmission
+- Airport transfer from Auckland is included at no extra cost
+- Luggage storage during the trip is included at no extra cost
+- No deposit required to hold dates
+- Free cancellation up to 14 days before pickup
+- 24/7 support during your trip
+
+## Blog Posts
+
+- [Top 10 Freedom Camping Spots in New Zealand](https://justgoodcampers.com/blog/top-10-freedom-camping-spots)
+- [North Island vs South Island: Which Route to Choose?](https://justgoodcampers.com/blog/north-island-vs-south-island)
+- [First Time Camper? Everything You Need to Know](https://justgoodcampers.com/blog/first-time-camper-guide)
+- [The Best Time to Visit New Zealand by Camper](https://justgoodcampers.com/blog/best-time-to-visit-new-zealand)
